@@ -35,7 +35,7 @@ enum result dump(list_t *li)
 
 enum result print(list_t *li)
 {
-    if (li->head->data->t_p == INT_8)
+    if (li->head->data->t_p != INT_8)
         return (-1);
     my_putchar(li->head->data->value.i);
     return (OK);
